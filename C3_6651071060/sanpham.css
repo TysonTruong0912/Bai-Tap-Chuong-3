@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    height: 48px;
+    background-color: #a8dddd;
+    display: flex;
+    align-items: center;
+    padding-left: 135px;
+}
+
+header img {
+    width: 70px;
+    height: 40px;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 22px;
+    margin-left: 12px;
+}
+
+main {
+    width: 590px;
+    margin: 10px auto;
+}
+
+main > h2 {
+    font-size: 17px;
+    margin: 10px 0 12px;
+}
+
+.product-area {
+    display: grid;
+    grid-template-columns: 155px 260px 135px;
+    gap: 10px;
+}
+
+.product-image img {
+    width: 155px;
+    height: 165px;
+    object-fit: contain;
+    border: 1px solid #999;
+    border-radius: 6px;
+    background-color: #edf7f8;
+}
+
+.product-info h2 {
+    font-size: 14px;
+    margin: 5px 0 10px;
+}
+
+.product-info p {
+    font-size: 9px;
+    line-height: 1.4;
+    margin: 0 0 7px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9px;
+}
+
+caption {
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+th {
+    background-color: #b9e0f0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8f3f3;
+}
+
+aside {
+    border: 1px solid #555;
+    border-radius: 6px;
+    padding: 8px;
+    height: 90px;
+}
+
+aside h3 {
+    margin: 0 0 7px;
+    font-size: 11px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    font-size: 9px;
+    margin: 6px 0;
+}
+
+.similar {
+    margin-top: 10px;
+}
+
+.similar h2 {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.products {
+    display: flex;
+    gap: 10px;
+}
+
+.item {
+    width: 115px;
+    height: 38px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #ccc;
+    font-size: 8px;
+    padding: 5px;
+}
+
+.item img {
+    width: 25px;
+    height: 28px;
+    float: left;
+    margin-right: 5px;
+    object-fit: contain;
+}
+
+.item strong {
+    font-size: 8px;
+}
+
+footer {
+    height: 50px;
+    background-color: #12506a;
+    color: white;
+    padding: 7px 145px;
+    font-size: 9px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 2px 0;
+}

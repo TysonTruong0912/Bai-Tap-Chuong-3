@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt vé máy bay VietAir</title>
+    <link rel="stylesheet" href="datve.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        VietAir ✈
+    </div>
+
+    <form action="xu_ly_ve.php" method="POST">
+
+        <h1>Đặt vé máy bay VietAir - Kết quả Bài tập</h1>
+
+        <section>
+
+            <h2>1. Thông tin chuyến bay</h2>
+
+            <div class="row">
+
+                <div class="field">
+
+                    <label for="diem_di">Điểm đi:</label>
+
+                    <input type="text"
+                           id="diem_di"
+                           name="diem_di"
+                           list="danhsach_thanh_pho"
+                           placeholder="Hà Nội – HAN">
+
+                </div>
+
+                <div class="field">
+
+                    <label for="diem_den">Điểm đến:</label>
+
+                    <input type="text"
+                           id="diem_den"
+                           name="diem_den"
+                           list="danhsach_thanh_pho"
+                           placeholder="Đà Nẵng – DAD">
+
+                </div>
+
+            </div>
+
+            <datalist id="danhsach_thanh_pho">
+
+                <option value="Hà Nội – HAN">
+                <option value="TP. Hồ Chí Minh – SGN">
+                <option value="Đà Nẵng – DAD">
+                <option value="Nha Trang – CXR">
+                <option value="Phú Quốc – PQC">
+                <option value="Hải Phòng – HPH">
+                <option value="Cần Thơ – VCA">
+
+            </datalist>
+
+            <div class="row">
+
+                <div class="field">
+
+                    <label for="ngay_di">Ngày đi:</label>
+
+                    <input type="date"
+                           id="ngay_di"
+                           name="ngay_di"
+                           required>
+
+                </div>
+
+                <div class="field">
+
+                    <label for="ngay_ve">Ngày về:</label>
+
+                    <input type="date"
+                           id="ngay_ve"
+                           name="ngay_ve">
+
+                </div>
+
+            </div>
+
+            <div class="field">
+
+                <label for="hang_ghe">Hạng ghế:</label>
+
+                <select id="hang_ghe"
+                        name="hang_ghe">
+
+                    <optgroup label="Phổ thông">
+
+                        <option value="eco_basic">
+                            Phổ thông basic – 1.200.000đ
+                        </option>
+
+                        <option value="eco_flex">
+                            Phổ thông flex – 1.800.000đ
+                        </option>
+
+                    </optgroup>
+
+                    <optgroup label="Thương gia">
+
+                        <option value="biz">
+                            Thương gia biz – 4.500.000đ
+                        </option>
+
+                    </optgroup>
+
+                </select>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>2. Thông tin hành khách</h2>
+
+            <div class="row">
+
+                <div class="field">
+
+                    <label for="nguoi_lon">
+                        Số hành khách người lớn:
+                    </label>
+
+                    <input type="number"
+                           id="nguoi_lon"
+                           name="nguoi_lon"
+                           min="1"
+                           max="9"
+                           value="1">
+
+                </div>
+
+                <div class="field">
+
+                    <label for="tre_em">
+                        Số trẻ em:
+                    </label>
+
+                    <input type="number"
+                           id="tre_em"
+                           name="tre_em"
+                           min="0"
+                           max="9"
+                           value="0">
+
+                </div>
+
+            </div>
+
+            <div class="field">
+
+                <label for="ma_giam_gia">
+                    Mã giảm giá:
+                </label>
+
+                <input type="text"
+                       id="ma_giam_gia"
+                       name="ma_giam_gia"
+                       list="ma_khuyen_mai">
+
+            </div>
+
+            <datalist id="ma_khuyen_mai">
+
+                <option value="SUMMER20">
+                <option value="NEWMEMBER">
+                <option value="HOLIDAY50">
+
+            </datalist>
+
+        </section>
+
+        <section>
+
+            <h2>3. Kết quả ước tính</h2>
+
+            <div class="result">
+
+                Tổng tiền ước tính:
+
+                <output name="tong_tien"
+                        id="tong_tien"
+                        for="hang_ghe nguoi_lon tre_em">
+                    0 VNĐ
+                </output>
+
+            </div>
+
+        </section>
+
+        <section class="security">
+
+            <h2>4. Bảo mật giao dịch</h2>
+
+            <p>
+                🔒 Hệ thống sẽ tạo một cặp khóa mã hóa để bảo vệ
+                thông tin của bạn.
+            </p>
+
+            <p>
+                Keygen has been deprecated and does not display
+                on modern browsers.
+            </p>
+
+            <keygen name="security_key"
+                    keytype="rsa">
+
+        </section>
+
+        <button type="submit">
+            ✈ Tìm chuyến bay
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
